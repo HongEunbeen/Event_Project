@@ -6,6 +6,14 @@ public class Review {
 	private String password;
 	private String content;
 	private int heart;
+	private String write;
+	
+	public String getWrite() {
+		return write;
+	}
+	public void setWrite(String write) {
+		this.write = write;
+	}
 	public int getNum() {
 		return num;
 	}
