@@ -64,21 +64,13 @@
 			  </thead>
 			  <tbody>
 			  <%
-			  Match_M matchM = new Match_M();
-			  Match_MDAO matchDAO = new Match_MDAO();
-			  ArrayList<Match_M> MatchList = matchDAO.selectAll();
-			  if(MatchList.isEmpty()){
-					PrintWriter script = response.getWriter();
-					script.println("<script>");
-					script.println("alert('사용자가 존재하지 않습니다')");
-					script.println("location.href = 'index.jsp'");
-					script.println("</script>");
-				}
-			  for(int i = 0; i < MatchList.size(); i++){ %>
+			    Match_MDAO matchDAO = new Match_MDAO();
+				ArrayList<Match_M> list = matchDAO.selectAll();
+				for(int i = 0; i < list.size(); i++){ %>
 			    <tr>
-			    	<td><%=MatchList.get(i).getPhone()%></td>
-			    	<td><%=MatchList.get(i).getName() %></td>
-			    	<td><%=MatchList.get(i).getCoupon() %></td>
+			    	<td><%=list.get(i).getPhone()%></td>
+			    	<td><%=list.get(i).getName() %></td>
+			    	<td><%=list.get(i).getCoupon() %></td>
 			    </tr>
 			<%} %>
 			  </tbody>

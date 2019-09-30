@@ -20,6 +20,8 @@
 		String phone = request.getParameter("phone");
 		String name = request.getParameter("name");
 		
+		
+		
 		Make_S makeS = new Make_S();
 		Make_SDAO makeSDAO = new Make_SDAO();
 		

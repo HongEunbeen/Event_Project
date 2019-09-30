@@ -78,7 +78,7 @@
 	            var  copImg= "img/coupon/coupon"+( gift +1) + ".png";
 	            console.log("이미지 : " + copImg );
 	    		$("#popup_gift .lottery_present" ).text(function( ) {
-	    			return "축하드립니다."+present [gift ] + " 룰렛숫장"+ ( gift +1)   + " 당첨 되셨습니다.";
+	    			return "쿠폰을 받으세요";
 	    		});
 	           	$( '<img  src="' + copImg+ '" />' ).prependTo("#popup_gift .lottery_present");
 	 			setTimeout(function() {openPopup("popup_gift");	}, 1000);
@@ -153,9 +153,6 @@
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="https://mobilehome.lotteria.com/store/search">주변매장</a>
-	      </li>
-	         <li class="nav-item">
-	        <a class="nav-link" href="admin.jsp">관리자</a>
 	      </li>
 	    </ul>
 	    <form class="form-inline my-2 my-lg-0">

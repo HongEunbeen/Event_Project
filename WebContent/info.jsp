@@ -48,9 +48,6 @@
 	      <li class="nav-item">
 	        <a class="nav-link" href="https://mobilehome.lotteria.com/store/search">주변매장</a>
 	      </li>
-	         <li class="nav-item">
-	        <a class="nav-link" href="admin.jsp">관리자</a>
-	      </li>
 	    </ul>
 	    <form class="form-inline my-2 my-lg-0">
 	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

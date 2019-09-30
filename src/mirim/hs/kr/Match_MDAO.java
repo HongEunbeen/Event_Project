@@ -27,19 +27,19 @@ public class Match_MDAO {
 		return -1; //데이터베이스 오류
 	}
 	public ArrayList<Match_M> selectAll() {
-		String SQL = "SELECT name, phone, coupon FROM match_m;";
+		String SQL = "SELECT name, phone, coupon FROM MATCH_M;";
+		System.out.print(SQL);
 		ArrayList<Match_M> list = new ArrayList<>();
 		try {		
 			pstmt = conn.prepareStatement(SQL);
-		
 			rs = pstmt.executeQuery();
-			
+			System.out.print("input");
 			while(rs.next()) {
 				Match_M match = new Match_M();
 				match.setName(rs.getString(1));
 				match.setPhone(rs.getString(2));
 				match.setCoupon(rs.getString(3));
-				System.out.print(match.getName());
+				
 				list.add(match);
 			}
 			return list;
